@@ -8,20 +8,19 @@ buildscript {
 
     repositories { mavenCentral() }
     dependencies {
-        classpath "org.springframework.boot:spring-boot-gradel-plugin:$spring_boot_version"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
     }
 }
 
+
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
 
 group 'com.lucius'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-
-apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
